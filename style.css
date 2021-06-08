@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #140138;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  height: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .player-1, header .player-2 {
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 20px black;
+          box-shadow: 0 0 20px black;
+}
+
+header .player-1 {
+  background-color: red;
+  position: relative;
+}
+
+header .player-2 {
+  background-color: blue;
+  position: relative;
+}
+
+header .active::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 20px gold;
+          box-shadow: 0 0 20px gold;
+  background-color: orange;
+}
+
+header .player-1-name, header .player-2-name {
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+
+header .player-1-score, header .player-2-score {
+  font-size: 110px;
+}
+
+section {
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  border: 1px solid #eee;
+  -webkit-box-shadow: 0 0 10px #eee;
+          box-shadow: 0 0 10px #eee;
+}
+
+section .box-container .box {
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  color: #eee;
+  border: 1px solid;
+  font-size: 70px;
+  cursor: pointer;
+}
+
+section .button-list {
+  min-width: 240px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 20px;
+}
+
+section .button-list .reset-game, section .button-list .retry-game {
+  width: 100px;
+  height: 40px;
+  background-color: #eee;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
