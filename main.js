@@ -28,13 +28,13 @@ var controller = (function () {
 
 			if (
 				(arrBoxes[0].innerHTML === "X" && arrBoxes[1].innerHTML === "X" && arrBoxes[2].innerHTML === "X") || 
-                (arrBoxes[3].innerHTML === "X" && arrBoxes[4].innerHTML === "X" && arrBoxes[5].innerHTML === "X") ||
+                		(arrBoxes[3].innerHTML === "X" && arrBoxes[4].innerHTML === "X" && arrBoxes[5].innerHTML === "X") ||
 				(arrBoxes[6].innerHTML === "X" && arrBoxes[7].innerHTML === "X" && arrBoxes[8].innerHTML === "X") || 
-                (arrBoxes[0].innerHTML === "X" && arrBoxes[3].innerHTML === "X" && arrBoxes[6].innerHTML === "X") ||
+                		(arrBoxes[0].innerHTML === "X" && arrBoxes[3].innerHTML === "X" && arrBoxes[6].innerHTML === "X") ||
 				(arrBoxes[1].innerHTML === "X" && arrBoxes[4].innerHTML === "X" && arrBoxes[7].innerHTML === "X") || 
-                (arrBoxes[2].innerHTML === "X" && arrBoxes[5].innerHTML === "X" && arrBoxes[8].innerHTML === "X") ||
+                		(arrBoxes[2].innerHTML === "X" && arrBoxes[5].innerHTML === "X" && arrBoxes[8].innerHTML === "X") ||
 				(arrBoxes[0].innerHTML === "X" && arrBoxes[4].innerHTML === "X" && arrBoxes[8].innerHTML === "X") || 
-                (arrBoxes[2].innerHTML === "X" && arrBoxes[4].innerHTML === "X" && arrBoxes[6].innerHTML === "X")
+                		(arrBoxes[2].innerHTML === "X" && arrBoxes[4].innerHTML === "X" && arrBoxes[6].innerHTML === "X")
 			) {
 				counter1 += 1;
 				player1Score.innerHTML = counter1;
